@@ -1,0 +1,18 @@
+<dialog aria-label="Enlarged image viewer">
+  <header>
+    <span class="title">Image Zoom</span>
+    <output class="zoom" aria-label="Zoom level">100%</output>
+    <button class="fit" type="button">Fit</button>
+    <button class="copy" type="button">Copy · Y</button>
+    <button class="close" type="button" aria-label="Close image viewer">Close · Esc</button>
+  </header>
+  <div class="stage" tabindex="0" aria-label="Image. Scroll to zoom; drag to pan.">
+    <div class="origin"><img draggable="false" alt="Enlarged image"></div>
+  </div>
+  <footer>
+    <span class="resolution"></span>
+    <span>Wheel to zoom · Drag to pan · Y to copy · Esc to close</span>
+    <span class="status" role="status" aria-live="polite">Loading image…</span>
+    <span class="error" role="alert"></span>
+  </footer>
+</dialog>
